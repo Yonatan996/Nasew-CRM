@@ -1,0 +1,320 @@
+{
+  "users": [
+    {
+      "id": "usr-admin",
+      "fullName": "System Administrator",
+      "email": "admin@nasew.com",
+      "phone": "+251911000001",
+      "role": "admin",
+      "department": "IT Support",
+      "status": "active",
+      "passwordHash": "$argon2id$v=19$m=65536,t=3,p=4$PUh82HMJBFlaoEeZF/qmng$X6ekJNvxiVHUHI4UkbddtTyaomHr719/S6C0DdNaQJk",
+      "createdAt": "2026-04-24T09:15:32.765Z",
+      "lastLogin": null
+    },
+    {
+      "id": "usr-manager",
+      "fullName": "Mekdes Tadesse",
+      "email": "manager@nasew.com",
+      "phone": "+251911000002",
+      "role": "manager",
+      "department": "Sales & Marketing",
+      "status": "active",
+      "passwordHash": "$argon2id$v=19$m=65536,t=3,p=4$PUh82HMJBFlaoEeZF/qmng$X6ekJNvxiVHUHI4UkbddtTyaomHr719/S6C0DdNaQJk",
+      "createdAt": "2026-04-24T09:15:32.765Z",
+      "lastLogin": null
+    },
+    {
+      "id": "usr-sales",
+      "fullName": "Samuel Alemu",
+      "email": "sales@nasew.com",
+      "phone": "+251911000003",
+      "role": "sales",
+      "department": "Sales",
+      "status": "active",
+      "passwordHash": "$argon2id$v=19$m=65536,t=3,p=4$PUh82HMJBFlaoEeZF/qmng$X6ekJNvxiVHUHI4UkbddtTyaomHr719/S6C0DdNaQJk",
+      "createdAt": "2026-04-24T09:15:32.765Z",
+      "lastLogin": null
+    },
+    {
+      "id": "usr-operations",
+      "fullName": "Rahel Bekele",
+      "email": "operations@nasew.com",
+      "phone": "+251911000004",
+      "role": "operations",
+      "department": "Operations",
+      "status": "active",
+      "passwordHash": "$argon2id$v=19$m=65536,t=3,p=4$PUh82HMJBFlaoEeZF/qmng$X6ekJNvxiVHUHI4UkbddtTyaomHr719/S6C0DdNaQJk",
+      "createdAt": "2026-04-24T09:15:32.765Z",
+      "lastLogin": null
+    }
+  ],
+  "clients": [
+    {
+      "id": "cli-001",
+      "firstName": "Hanna",
+      "lastName": "Tesfaye",
+      "email": "hanna.tesfaye@example.com",
+      "phone": "+251911111111",
+      "address": "Hawassa",
+      "leadSource": "Website",
+      "status": "Qualified",
+      "assignedAgentId": "usr-sales",
+      "preferences": {
+        "propertyType": "Apartment",
+        "location": "Hawassa",
+        "budget": 6500000
+      },
+      "communicationHistory": [
+        {
+          "id": "comm-001",
+          "channel": "Phone",
+          "note": "Requested a two-bedroom apartment near the city center.",
+          "createdAt": "2026-04-24T09:15:32.765Z",
+          "createdBy": "usr-sales"
+        }
+      ],
+      "followUpDate": "2026-04-24",
+      "createdAt": "2026-04-24T09:15:32.765Z",
+      "updatedAt": "2026-04-24T09:15:32.765Z"
+    },
+    {
+      "id": "cli-002",
+      "firstName": "Abel",
+      "lastName": "Mulugeta",
+      "email": "abel.mulugeta@example.com",
+      "phone": "+251922222222",
+      "address": "Addis Ababa",
+      "leadSource": "Telegram",
+      "status": "Prospect",
+      "assignedAgentId": "usr-sales",
+      "preferences": {
+        "propertyType": "Villa",
+        "location": "Addis Ababa",
+        "budget": 12000000
+      },
+      "communicationHistory": [],
+      "followUpDate": "2026-04-24",
+      "createdAt": "2026-04-24T09:15:32.765Z",
+      "updatedAt": "2026-04-24T09:15:32.765Z"
+    }
+  ],
+  "properties": [
+    {
+      "id": "prop-001",
+      "propertyType": "Apartment",
+      "title": "Lake View Residence",
+      "description": "A modern apartment close to schools and shopping.",
+      "location": "Hawassa",
+      "size": 145,
+      "price": 6200000,
+      "status": "Available",
+      "amenities": [
+        "Parking",
+        "Security",
+        "Balcony"
+      ],
+      "images": [],
+      "ownerDetails": {
+        "fullName": "Nasew Holdings"
+      },
+      "updatedAt": "2026-04-24T09:15:32.765Z"
+    },
+    {
+      "id": "prop-002",
+      "propertyType": "Villa",
+      "title": "Sunset Family Villa",
+      "description": "A spacious villa with a private compound.",
+      "location": "Addis Ababa",
+      "size": 280,
+      "price": 13500000,
+      "status": "Reserved",
+      "amenities": [
+        "Garden",
+        "Parking",
+        "Backup Power"
+      ],
+      "images": [],
+      "ownerDetails": {
+        "fullName": "Nasew Holdings"
+      },
+      "updatedAt": "2026-04-24T09:15:32.765Z"
+    }
+  ],
+  "pipelines": [
+    {
+      "id": "pipe-001",
+      "clientId": "cli-001",
+      "propertyId": "prop-001",
+      "currentStage": "Negotiation",
+      "stageHistory": [
+        {
+          "stage": "Lead",
+          "timestamp": "2026-04-24T09:15:32.765Z",
+          "updatedBy": "usr-sales"
+        },
+        {
+          "stage": "Qualified",
+          "timestamp": "2026-04-24T09:15:32.765Z",
+          "updatedBy": "usr-sales"
+        },
+        {
+          "stage": "Negotiation",
+          "timestamp": "2026-04-24T09:15:32.765Z",
+          "updatedBy": "usr-sales"
+        }
+      ],
+      "probability": 68,
+      "estimatedValue": 6200000,
+      "expectedCloseDate": "2026-04-24",
+      "agentNotes": "Client requested a revised payment schedule.",
+      "assignedAgentId": "usr-sales",
+      "createdAt": "2026-04-24T09:15:32.765Z",
+      "updatedAt": "2026-04-24T09:15:32.765Z"
+    },
+    {
+      "id": "pipe-002",
+      "clientId": "cli-002",
+      "propertyId": "prop-002",
+      "currentStage": "Reserved",
+      "stageHistory": [
+        {
+          "stage": "Lead",
+          "timestamp": "2026-04-24T09:15:32.765Z",
+          "updatedBy": "usr-sales"
+        },
+        {
+          "stage": "Reserved",
+          "timestamp": "2026-04-24T09:15:32.765Z",
+          "updatedBy": "usr-sales"
+        }
+      ],
+      "probability": 82,
+      "estimatedValue": 13500000,
+      "expectedCloseDate": "2026-04-24",
+      "agentNotes": "Waiting for final reservation payment validation.",
+      "assignedAgentId": "usr-sales",
+      "createdAt": "2026-04-24T09:15:32.765Z",
+      "updatedAt": "2026-04-24T09:15:32.765Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay-001",
+      "clientId": "cli-002",
+      "propertyId": "prop-002",
+      "transactionType": "Reservation",
+      "amount": 500000,
+      "dueDate": "2026-04-24",
+      "paymentDate": null,
+      "status": "Pending Validation",
+      "paymentMethod": "Bank Transfer",
+      "receiptReference": "TRX-458822",
+      "validatedBy": null,
+      "createdAt": "2026-04-24T09:15:32.765Z",
+      "updatedAt": "2026-04-24T09:15:32.765Z"
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc-001",
+      "clientId": "cli-001",
+      "propertyId": "prop-001",
+      "documentType": "Draft Contract",
+      "fileName": "lake-view-draft-contract.pdf",
+      "filePath": "/documents/lake-view-draft-contract.pdf",
+      "fileSize": 124000,
+      "version": 1,
+      "status": "Pending Approval",
+      "uploadedBy": "usr-operations",
+      "approvedBy": null,
+      "createdAt": "2026-04-24T09:15:32.765Z",
+      "updatedAt": "2026-04-24T09:15:32.765Z"
+    }
+  ],
+  "activities": [
+    {
+      "id": "act-001",
+      "clientId": "cli-001",
+      "agentId": "usr-sales",
+      "activityType": "Follow-up Call",
+      "scheduledDate": "2026-04-24",
+      "scheduledTime": "10:30",
+      "duration": 30,
+      "location": "Remote",
+      "status": "Scheduled",
+      "notes": "Discuss payment timeline options.",
+      "createdAt": "2026-04-24T09:15:32.765Z",
+      "updatedAt": "2026-04-24T09:15:32.765Z"
+    }
+  ],
+  "approvals": [
+    {
+      "id": "apr-001",
+      "type": "Pricing Request",
+      "title": "Discount request for Lake View Residence",
+      "status": "Pending",
+      "requestedBy": "usr-sales",
+      "reviewedBy": null,
+      "relatedEntity": {
+        "entityType": "pipeline",
+        "entityId": "pipe-001"
+      },
+      "details": "Client requested a 3% discount after the site visit.",
+      "createdAt": "2026-04-24T09:15:32.765Z",
+      "updatedAt": "2026-04-24T09:15:32.765Z"
+    },
+    {
+      "id": "apr-002",
+      "type": "Contract Approval",
+      "title": "Approve draft contract for Hanna Tesfaye",
+      "status": "Pending",
+      "requestedBy": "usr-operations",
+      "reviewedBy": null,
+      "relatedEntity": {
+        "entityType": "document",
+        "entityId": "doc-001"
+      },
+      "details": "Draft contract is ready for managerial review.",
+      "createdAt": "2026-04-24T09:15:32.765Z",
+      "updatedAt": "2026-04-24T09:15:32.765Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "not-001",
+      "userId": "usr-sales",
+      "notificationType": "Reminder",
+      "title": "Follow up with Hanna Tesfaye",
+      "message": "Call the client before noon and update the pipeline stage.",
+      "channel": "In-App",
+      "status": "Unread",
+      "priority": "High",
+      "relatedEntity": {
+        "entityType": "activity",
+        "entityId": "act-001"
+      },
+      "createdAt": "2026-04-24T09:15:32.765Z"
+    }
+  ],
+  "audits": [
+    {
+      "id": "aud-001",
+      "userId": "usr-admin",
+      "action": "seed_system",
+      "entityType": "system",
+      "entityId": "bootstrap",
+      "oldValues": null,
+      "newValues": {
+        "status": "initialized"
+      },
+      "timestamp": "2026-04-24T09:15:32.765Z"
+    }
+  ],
+  "settings": {
+    "companyName": "Nasew Real Estate",
+    "timezone": "Africa/Addis_Ababa",
+    "reminderLeadDays": 1,
+    "lowBandwidthMode": true
+  }
+}

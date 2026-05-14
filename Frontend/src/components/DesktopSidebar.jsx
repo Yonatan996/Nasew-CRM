@@ -167,7 +167,7 @@ const DesktopSidebar = ({
             </svg>
           </div>
           {isSidebarOpen && (
-            <span className="text-xl font-bold text-white">Savanna</span>
+            <span className="text-xl font-bold text-white">Nasew</span>
           )}
         </div>
 

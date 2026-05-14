@@ -125,7 +125,7 @@ const googleLogin = useGoogleLogin({
   return (
     <div className="w-full max-w-sm">
       <h2 className="block sm:hidden text-2xl font-bold text-center mb-2 text-[#F4A300]">
-        Savanna
+        Nasew
       </h2>
 
       <h2 className="text-3xl font-bold text-center mb-2 text-charcoal">

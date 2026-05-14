@@ -50,7 +50,7 @@ const ForgotPassword = () => {
             {isLoading ? 'Sending...' : 'Send Reset Link'}
           </button>
         </form>
-        <button onClick={() => navigate('/')} className="mt-4 w-full text-[#F4A300] hover:underline text-sm">
+        <button onClick={() => navigate('/login')} className="mt-4 w-full text-[#F4A300] hover:underline text-sm">
           Back to Login
         </button>
       </div>
